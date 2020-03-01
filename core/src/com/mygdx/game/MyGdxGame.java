@@ -126,11 +126,12 @@ public class MyGdxGame extends ApplicationAdapter {
 	// dispose() - позволяет удалить неиспользуемые в игре объекты/ресурсы
 	@Override
 	public void dispose() {
+        batch.dispose();
 		dropImage.dispose();
 		bucketImage.dispose();
 		dropSound.dispose();
 		rainMusic.dispose();
-		batch.dispose();
-		
+
+
 	}
 }
